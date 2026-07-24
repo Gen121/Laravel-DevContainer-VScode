@@ -1,0 +1,28 @@
+{
+  "name": "Laravel Dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/var/www",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "ryannaddy.laravel-artisan",
+        "onecentlin.laravel-blade",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig"
+      ],
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "editor.formatOnSave": true
+      }
+    }
+  },
+
+  "forwardPorts": [8080, 5432, 6379, 9003],
+
+  "postCreateCommand": "composer install"
+}
