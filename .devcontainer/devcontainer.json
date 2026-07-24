@@ -22,7 +22,5 @@
     }
   },
 
-  "forwardPorts": [8080, 5432, 6379, 9003],
-
-  "postCreateCommand": "composer install"
+  "forwardPorts": [8080, 5432, 6379, 9003]
 }
